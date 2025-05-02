@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.appNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    background-color: #fff;
+    position: relative;
+    z-index: 100;
+    border-bottom: 1px rgb(215, 215, 215) solid;
+}
+
+.logoNav {
+    height: 90px;
+    width: auto;
+}
+
+.imgNav1 {
+    width: 50px;
+    height: auto;
+}
+
+.imgNav2 {
+    width: 60px;
+    height: auto;
+}
+
+.navList {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 1rem;
+}
+
+.navList a,
+.navList button {
+    text-decoration: none;
+    font-size: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #092436;
+}
+
+.navList a:hover{
+    color: #03568d;
+}
+
+.navList button {
+    border: none;
+    background-color: white;
+}
+
+.item {
+    margin-left: 30px;
+}
+
+.navList .dropdown {
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 30px;
+    color: #092436;
+}
+
+.navList .dropdownContent {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 160px;
+    z-index: 1;
+    text-align: center;
+    padding: 0;
+    background-color: white;
+    border-bottom: 1px solid rgb(215, 215, 215);
+    border-left: 1px solid rgb(215, 215, 215);
+    border-right: 1px solid rgb(215, 215, 215);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.navList .dropdown:hover .dropdownContent {
+    display: block;
+}
+
+.navList .dropdownContent li {
+    list-style: none;
+    padding: 8px 0;
+}
+
+.navList .dropdownContent li a {
+    display: block;
+    color: #092436;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navList .dropdownContent li a:hover {
+    color: black;
+    background-color: rgb(248, 248, 248);
+}
+
+@media (max-width: 768px) {
+    .appNav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 1rem;
+        border: 0;
+    }
+
+    .navList {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        z-index: 50;
+        align-items: flex-start;
+        padding-left: 15px;
+    }
+
+    .navList.active {
+        display: flex;
+        padding-top: 20px;
+    }
+
+    .item {
+        margin: 10px 0;
+        text-align: left;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: #092436;
+        margin-left: auto;
+    }
+
+    .navList .dropdown {
+        position: relative;
+        padding: 0;
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+
+    .navList .dropdownContent {
+        display: none;
+        position: relative;
+        width: 100%;
+        z-index: 1;
+        background-color: white;
+        padding: 0;
+    }
+
+    .navList .dropdown:hover .dropdownContent,
+    .dropdown.active .dropdownContent {
+        display: block;
+        border: 0;
+        margin-top: 0px;
+    }
+
+    .navList .dropdownContent li {
+        list-style: none;
+        padding: 8px 0;
+        text-align: left;
+        padding-left: 10px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+    .navList .dropdownContent li a {
+        display: block;
+        color: #092436;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .navList .dropdownContent li a:hover {
+        color: black;
+    }
+
+    .dropdownContent {
+        position: relative;
+        top: 0;
+        width: 100%;
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .logoNav {
+        height: 60px;
+        width: auto;
+        margin-left: 0px;
+    }
+
+    .imgNav1 {
+        width: 35px;
+        height: auto;
+    }
+
+    .imgNav2 {
+        width: 45px;
+        height: auto;
+    }
+
+    .item {
+        margin-top: -5px;
+    }
+
+    .navList a,
+    .navList button {
+        font-size: 18px;
+    }
+}
+
+.item-btn{
+    border: 1px #092436 solid;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: rgb(6, 190, 6);
+}
+
+.navList .item .item-btn:hover {
+    color: #ffffff;
+}
