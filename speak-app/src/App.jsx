@@ -10,22 +10,26 @@ import Logon from './pages/Logon/Logon';
 import NotFound from './pages/NotFound/NotFound';
 import MainLayout from './layouts/MainLayout';
 import EmptyLayout from './layouts/EmptyLayout';
+import ChatBot from './components/ChatBot/ChatBot';
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        {/* Ana sayfa - Navbar ve Footer var */}
-        <Route path="/" element={<MainLayout><Home /></MainLayout>} />
-        <Route path="/About" element={<MainLayout><About /></MainLayout>} />
-        <Route path="/Exercise" element={<MainLayout><Exercise /></MainLayout>} />
-        <Route path="/Game" element={<MainLayout><Game /></MainLayout>} />
-        {/* 404 sayfası - Navbar ve Footer yok */}
-        <Route path="*" element={<EmptyLayout><NotFound /></EmptyLayout>} />
-        <Route path="/Login" element={<EmptyLayout><Login /></EmptyLayout>} />
-        <Route path="/Logon" element={<EmptyLayout><Logon /></EmptyLayout>} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <Routes>
+          {/* Ana sayfa - Navbar ve Footer var */}
+          <Route path="/" element={<MainLayout><Home /></MainLayout>} />
+          <Route path="/About" element={<MainLayout><About /></MainLayout>} />
+          <Route path="/Exercise" element={<MainLayout><Exercise /></MainLayout>} />
+          <Route path="/Game" element={<MainLayout><Game /></MainLayout>} />
+          {/* 404 sayfası - Navbar ve Footer yok */}
+          <Route path="*" element={<EmptyLayout><NotFound /></EmptyLayout>} />
+          <Route path="/Login" element={<EmptyLayout><Login /></EmptyLayout>} />
+          <Route path="/Logon" element={<EmptyLayout><Logon /></EmptyLayout>} />
+        </Routes>
+      </BrowserRouter>
+      <ChatBot/>
+    </>
   );
 };
 
