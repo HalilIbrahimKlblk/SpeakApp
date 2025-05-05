@@ -1,110 +1,84 @@
-/* Genel Sayfa Stilleri */
+/* Genel ayarlar */
 * {
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
-  }
-  
-  /* Container: Sayfa genelindeki ana kapsayıcı */
-  .container {
-    padding: 20px;
-    width: 90%;
-    height: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* h2: Başlıklar için stil */
-  .section h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #eaeeef; /* Başlık arka plan rengi */
-    color: #092436; /* Başlık metin rengi */
-    font-size: 30px; /* Başlık yazı boyutu */
-    margin-bottom: 2px;
-    border-bottom: 2px solid #ddd; /* Alt kenar çizgisi */
-    text-align: center; /* Başlık hizalaması */
-    border-radius: 8px; /* Yuvarlak köşeler */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
-    transition: all 0.3s ease; /* Geçiş efekti */
-  }
-  
-  /* Hover Efekti: Başlık üzerine gelindiğinde renk değişimi ve hafif hareket */
-  .section h2:hover {
-    color: skyblue; /* Hover metin rengi */
-    transform: translateY(-5px); /* Hafif yukarı kayma efekti */
-  }
-  
-  /* p: Paragraflar için stil */
-  .section p {
-    color: #444; /* Metin rengi */
-    font-size: 16px; /* Yazı boyutu */
-    line-height: 1.8; /* Satır yüksekliği */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Yazı tipi */
-    text-align: justify; /* Metin hizalaması */
-    padding: 15px; /* İç boşluk */
-    margin-bottom: 15px; /* Alt boşluk */
-    background-color: #f1f1f1; /* Arka plan rengi */
-    border-radius: 8px; /* Yuvarlak köşeler */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
-    transition: background-color 0.3s ease; /* Arka plan değişimi için geçiş efekti */
-  }
-  
-  .takim{
-    background-image: url('../img/images.jpeg'); /* Resim dosyasının yolu */
-    background-size: cover; /* Resim sayfayı tamamen kaplasın */
-    background-position: center center; /* Resim ortalanmış şekilde yerleştirilsin */
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 20px;
-    padding: 20px;
-  }
-  .takimuyeleri {
-    word-wrap: break-word; /* Uzun kelimelerin ve e-posta adreslerinin satır sonuna geçmesini sağlar */
-    white-space: normal;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin-top: 15px;
-      padding: 15px;
-      background-color: azure;
-      border-radius: 15px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      width: 180px;
-      text-align: center;
-      transition: transform 0.25s;
-    }
-    
-    
-  .takimuyeleri:hover {
-    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-      transform: translateY(-10px);
-    }
-    .takimuyeleri a {
-      word-wrap: break-word; /* E-posta adreslerinin taşmasını engeller */
-      max-width: 100%; /* Linkin taşmaması için */
-      word-wrap: break-word; /* E-posta adreslerinin taşmasını engeller */
-      color: #2b6777;
-      text-decoration: none;
-      font-size: 14px;
-      display: inline-block;
-      margin: 4px 0;
-      transition: color 0.3s ease;
-    }
-    
-    .takimuyeleri a:hover {
-      color: #0e99c1;
-      text-decoration: underline;
-    }
-    
-  /* Görsel stil */
-  .takimuyeleri img {
-    width: 100%; /* Fotoğraf kartın genişliğine uyum sağlasın */
-    height: 150px; /* Fotoğrafın sabit yüksekliği */
-    object-fit: cover; /* Fotoğraf alanı dolduracak şekilde kesilsin, orantı korunur */
-      border-radius: 10px;
-      margin-bottom: 10px;
-    }
-  
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  background-color: #f9fafa;
+  color: #333;
+}
+
+/* Hero alanı */
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 30px 20px;
+  background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+  font-size: 32px;
+  color: #004d40;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Bölüm başlıkları */
+.section h2 {
+  font-size: 24px;
+  color: #005662;
+  border-left: 5px solid #00acc1;
+  padding-left: 10px;
+  margin: 20px 0 10px;
+}
+
+/* Paragraflar */
+.section p {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  line-height: 1.7;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  text-align: justify;
+}
+
+/* Takım alanı */
+.team-section {
+  margin-top: 50px;
+}
+
+.team-section h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #004d40;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.speakks{
+  font-size: 50px;
+}

@@ -6,6 +6,7 @@ const Logon = () => {
   const navigate = useNavigate();
   return (
     <>
+      <p className="info-text"> Dijital Konuşma Terapisi sistemine hoş geldiniz. Giriş yaparak terapi sürecinize kaldığınız yerden devam edebilirsiniz.</p>
       <form className="logon-form" onSubmit={(e) => { e.preventDefault(); navigate('/Login'); }}>
         <div className="imgcontainer">
           <img src="/img/user.svg" alt="Avatar" className="avatar" />
@@ -46,7 +47,9 @@ const Logon = () => {
           <a className="redbtn" href='/'>Ana Menü</a>
         </div>
       </form>
-
+      <p className="info-text">
+        Herhangi bir sorunla karşılaşırsanız lütfen sistem yöneticisiyle iletişime geçin veya destek sayfamızı ziyaret edin.
+      </p>
     </>
   )
 }

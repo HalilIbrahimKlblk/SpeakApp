@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Exercise from './pages/Exercise/Exercise';
+import Game from './pages/Game/Game';
 import Login from './pages/Login/Login';
 import Logon from './pages/Logon/Logon';
 import NotFound from './pages/NotFound/NotFound';
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/" element={<MainLayout><Home /></MainLayout>} />
         <Route path="/About" element={<MainLayout><About /></MainLayout>} />
         <Route path="/Exercise" element={<MainLayout><Exercise /></MainLayout>} />
+        <Route path="/Game" element={<MainLayout><Game /></MainLayout>} />
         {/* 404 sayfası - Navbar ve Footer yok */}
         <Route path="*" element={<EmptyLayout><NotFound /></EmptyLayout>} />
         <Route path="/Login" element={<EmptyLayout><Login /></EmptyLayout>} />

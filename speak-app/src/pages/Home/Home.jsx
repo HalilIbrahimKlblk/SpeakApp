@@ -79,7 +79,7 @@ const Home = () => {
               <p className='speak-p'>Yapay zekâ destekli mobil uygulamamız, dil ve konuşma bozukluğu yaşayan bireyler için kişiselleştirilmiş egzersizler, ses tanıma ve oyunlaştırma teknikleriyle terapi sürecini daha etkili, keyifli ve erişilebilir hale getiriyor. Artık konuşmak daha kolay, gelişmek daha hızlı!</p>
               <p className='speak-p'>Dil ve konuşma bozukluklarıyla mücadele eden bireyler için geliştirilen bu yenilikçi mobil uygulama, yapay zekâ ile güçlendirilmiş interaktif egzersizlerle terapi sürecini dijital ortama taşıyor. Kişiye özel geri bildirimler, eğlenceli görevler ve motivasyon artırıcı ödüllerle konuşma gelişimi artık daha etkili ve sürdürülebilir!</p>
               <div className='div-login-flex'>
-                <a href='/Login' className='login-a'>HEMEN <br/> KAYIT OL</a>
+                <a href='/Logon' className='login-a'>HEMEN KAYIT OL</a>
                 <img src='/img/logo2.png' width={180} />
               </div>
             </div>

@@ -30,25 +30,25 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li className='item dropdown'>
-                        <span>Oyun</span>
+                        <span><a href='/Game'>Oyun</a></span>
                         <ul className='dropdownContent'>
                             <li>
-                                <a href='/Words'>
+                                <a href='/'>
                                     Kelime Avı
                                 </a>
                             </li>
                             <li>
-                                <a href='/Match'>
+                                <a href='/error'>
                                     Eşleştirme
                                 </a>
                             </li>
                             <li>
-                                <a href='/Puzzle'>
+                                <a href='/error'>
                                     Bulmaca
                                 </a>
                             </li>
                             <li>
-                                <a href='/Senarist'>
+                                <a href='/error'>
                                     Senarist
                                 </a>
                             </li>
