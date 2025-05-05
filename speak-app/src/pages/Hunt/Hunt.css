@@ -1,0 +1,229 @@
+/* Genel Konteyner */
+.kelime-bulmaca-container {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* Başlık */
+.kelime-bulmaca-title {
+    font-size: 24px;
+    margin: 20px;
+    color: #333;
+}
+
+.kelime-bulmaca-title span {
+    color: #1976d2;
+    font-weight: bold;
+}
+
+/* Menü, Süre ve Skor Alanları */
+.kelime-bulmaca-menu p {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Menü Linki (Ana Menü) */
+.kelime-bulmaca-link {
+    font-size: 18px;
+    text-decoration: none;
+    color: #2e7d32;
+    margin-bottom: 10px;
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.kelime-bulmaca-link:hover {
+    color: #388e3c;
+    background-color: #2e7d32;
+    transform: scale(1.05);
+}
+
+/* Bulmaca Izgarası */
+.kelime-bulmaca-grid {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.kelime-bulmaca-row {
+    display: flex;
+}
+
+/* Hücreler */
+.kelime-bulmaca-cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    font-size: 20px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+.kelime-bulmaca-cell:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+/* Seçilen Hücreler */
+.kelime-bulmaca-selected {
+    background-color: #d1e7dd;
+    font-weight: bold;
+}
+
+/* Tebrik Mesajı */
+.kelime-bulmaca-congrats {
+    margin-top: 20px;
+    font-size: 20px;
+    color: green;
+    font-weight: bold;
+    animation: fadeIn 0.6s ease-in;
+}
+
+/* Fade In Efekti */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Süre ve Skor */
+.kelime-bulmaca-timer, .kelime-bulmaca-score {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d32f2f;
+    margin-top: 20px;
+}
+
+.kelime-bulmaca-timer span, .kelime-bulmaca-score span {
+    color: #1976d2;
+    font-size: 22px;
+}
+
+/* Menü Alanı */
+.kelime-bulmaca-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    background-color: #1976d2;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* Menü Öğeleri */
+.kelime-bulmaca-link, .kelime-bulmaca-timer, .kelime-bulmaca-score, .kelime-bulmaca-btn {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px; /* Aynı boyut tüm butonlar için */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Menü Linki (Ana Menü) */
+.kelime-bulmaca-link {
+    background-color: #388e3c;
+    border: 2px solid #2e7d32;
+}
+
+.kelime-bulmaca-link:hover {
+    background-color: #2e7d32;
+    transform: scale(1.05);
+}
+
+/* Skor ve Süre */
+.kelime-bulmaca-timer, .kelime-bulmaca-score {
+    background-color: #fbc02d;
+    border: 2px solid #f9a825;
+    padding: 12px 24px;
+    font-size: 18px;
+}
+
+.kelime-bulmaca-timer span, .kelime-bulmaca-score span {
+    color: #1976d2;
+}
+
+/* Tekrar Oyna Butonu */
+.kelime-bulmaca-btn {
+    background-color: #d32f2f;
+    border: 2px solid #c62828;
+    color: white;
+}
+
+.kelime-bulmaca-btn:hover {
+    background-color: #c62828;
+    transform: scale(1.05);
+}
+
+.btn1 {
+    background-color: #00ba0c;
+    border: 2px solid #199900;
+    color: white;
+}
+
+.btn1:hover {
+    background-color: #00ba0c;
+    transform: scale(1.05);
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 600px) {
+    .kelime-bulmaca-menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .kelime-bulmaca-link, .kelime-bulmaca-timer, .kelime-bulmaca-score, .kelime-bulmaca-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .kelime-bulmaca-grid {
+        grid-template-columns: repeat(10, 1fr);
+        gap: 3px;
+    }
+
+    .kelime-bulmaca-cell {
+        font-size: 16px;
+    }
+
+    .kelime-bulmaca-title {
+        font-size: 22px;
+    }
+
+    .kelime-bulmaca-congrats {
+        font-size: 18px;
+    }
+
+    .kelime-bulmaca-timer, .kelime-bulmaca-score {
+        font-size: 16px;
+    }
+}

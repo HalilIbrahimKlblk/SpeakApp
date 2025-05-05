@@ -33,7 +33,7 @@ const Navbar = () => {
                         <span><a href='/Game'>Oyun</a></span>
                         <ul className='dropdownContent'>
                             <li>
-                                <a href='/'>
+                                <a href='/Hunt'>
                                     Kelime Avı
                                 </a>
                             </li>

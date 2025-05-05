@@ -11,6 +11,7 @@ import NotFound from './pages/NotFound/NotFound';
 import MainLayout from './layouts/MainLayout';
 import EmptyLayout from './layouts/EmptyLayout';
 import ChatBot from './components/ChatBot/ChatBot';
+import Hunt from './pages/Hunt/Hunt';
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="*" element={<EmptyLayout><NotFound /></EmptyLayout>} />
           <Route path="/Login" element={<EmptyLayout><Login /></EmptyLayout>} />
           <Route path="/Logon" element={<EmptyLayout><Logon /></EmptyLayout>} />
+          <Route path="/Hunt" element={<EmptyLayout><Hunt/></EmptyLayout>} />
         </Routes>
       </BrowserRouter>
       <ChatBot/>

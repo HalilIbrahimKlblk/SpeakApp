@@ -9,7 +9,7 @@ const Game = () => {
       <Container>
         <Row>
           <Col xs={12} sm={12} md={6} lg={6}>
-            <Card link="/" name="Kelime Avı" img="/img/av.png" />
+            <Card link="/Hunt" name="Kelime Avı" img="/img/av.png" />
           </Col>
           <Col xs={12} sm={12} md={6} lg={6}>
             <Card link="/error" name="Eşleştirme" img="/img/eslestirme.jpg" />
