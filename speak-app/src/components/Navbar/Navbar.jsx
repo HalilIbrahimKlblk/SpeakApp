@@ -20,12 +20,12 @@ const Navbar = () => {
                 </div>
                 <ul className={`navList ${menuOpen ? 'active' : ''}`}>
                     <li className='item'>
-                        <a href='/about'>
+                        <a href='/About'>
                             Hakkımızda
                         </a>
                     </li>
                     <li className='item'>
-                        <a href='/exercise'>
+                        <a href='/Exercise'>
                             Egzersiz
                         </a>
                     </li>
@@ -55,7 +55,7 @@ const Navbar = () => {
                         </ul>
                     </li>
                     <li className='item'>
-                        <a className='item-btn' href='/login'>
+                        <a className='item-btn' href='/Login'>
                             Kayıt Ol / Giriş
                         </a>
                     </li>

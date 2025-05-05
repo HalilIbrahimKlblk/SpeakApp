@@ -1,0 +1,369 @@
+.speak-img {
+    width: 100%;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.speak-img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .nav-button {
+        display: none;
+    }
+
+    .nav-button.left {
+        display: none;
+    }
+
+    .nav-button.right {
+        display: none;
+    }
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.nav-button.left {
+    left: 10px;
+}
+
+.nav-button.right {
+    right: 10px;
+}
+
+.dots {
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 6px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+.speak-h1 {
+    font-family: "Sansation", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.speak-text {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+.app-img {
+    width: 300px;
+}
+
+.speak-p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-a{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    color: black;
+}
+
+.login-a:hover{
+    text-decoration: none;
+    color: rgb(60, 60, 60);
+}
+
+.div-login-flex{
+    display: flex;
+}
+
+@media (max-width:768px) {
+    .app-img {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .div-login-flex{
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login-a{
+        font-size: 30px;
+    }
+}
+
+@media (min-width:769px) {
+    .login-a{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+/*Form Başlangıç*/
+.form-genel {
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #892827;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #752220;
+}
+
+.contact-form .location {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.contact-form .location a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact-form .location a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.icon {
+    padding-right: 20px;
+}
+
+@media (min-width:768px) {
+    .sağ-from {
+        position: relative;
+        margin: 0;
+        margin-bottom: 20px;
+        height: 580px;
+        display: grid;
+        justify-content: center;
+        /* Yatayda ortalama */
+        align-items: center;
+        /* Dikeyde ortalama */
+        text-align: center;
+    }
+
+    .sağ-from::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80%;
+        background: url('../img/tbtk.jpg') no-repeat center center;
+        background-size: cover;
+        /* Resmin tam olarak alanı kaplamasını sağlar */
+        opacity: 0.1;
+        z-index: -1;
+        /* Arka planın yazıların arkasında kalmasını sağlar */
+    }
+
+    .sağ-from>* {
+        position: relative;
+        z-index: 1;
+        /* Yazıların arka planın önünde olmasını sağlar */
+    }
+
+    .sol-from {
+        margin: 0;
+        margin-left: 280px;
+        margin-bottom: 20px;
+        height: 580px;
+    }
+}
+
+@media (max-width:768px) {
+    .contact-form .location {
+        font-size: 20px;
+    }
+
+    .sağ-from {
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        display: grid;
+        justify-content: center;
+        /* Yatayda ortalama */
+        align-items: center;
+        /* Dikeyde ortalama */
+        text-align: center;
+    }
+
+    .sağ-from::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 25%;
+        width: 50%;
+        height: 70%;
+        background: url('../img/tbtk.jpg') no-repeat center center;
+        background-size: cover;
+        /* Resmin tam olarak alanı kaplamasını sağlar */
+        opacity: 0.1;
+        z-index: -1;
+        /* Arka planın yazıların arkasında kalmasını sağlar */
+    }
+
+    .sağ-from>* {
+        position: relative;
+        z-index: 1;
+        /* Yazıların arka planın önünde olmasını sağlar */
+    }
+
+    .sağ-from {
+        margin: 20px;
+    }
+
+    .sol-from {
+        margin: 20px;
+    }
+}
+
+.logolar {
+    display: flex;
+    gap: 50px;
+}
+
+.logolar img {
+    height: 80px;
+}
+
+@media (max-width:768px) {
+    .logolar img {
+        height: 50px;
+    }
+}
+
+/*Form Bitiş*/
+
+.features-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card i {
+    font-size: 36px;
+    color: #6a0dad;
+    margin-bottom: 12px;
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.feature-card p {
+    color: #555;
+    font-size: 16px;
+}
+
+@media (max-width:768px) {
+    .feature-card {
+        width: 80%;
+        margin-left: 10%;
+    }
+}

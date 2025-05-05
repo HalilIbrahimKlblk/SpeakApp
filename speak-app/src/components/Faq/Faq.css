@@ -1,0 +1,32 @@
+.faq-item {
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin-left: 10%;
+}
+
+.faq-question {
+    padding: 15px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #ececec;
+}
+
+.faq-answer {
+    padding: 15px 20px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    line-height: 1.5;
+    display: none;
+    border-top: 1px solid #ddd;
+}
+
+.faq-answer.open {
+    display: block;
+}

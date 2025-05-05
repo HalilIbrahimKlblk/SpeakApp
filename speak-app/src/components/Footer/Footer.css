@@ -1,0 +1,98 @@
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    z-index: 1000;
+    background-color: rgb(242, 242, 242);
+}
+
+.footer-info__name {
+    text-align: center;
+}
+
+.footer-social-media {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.icon-social-media {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.footer-social-media svg {
+    fill: black;
+    color: black;
+}
+
+.footer-links {
+    display: flex;
+    gap: 200px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-links .textPad {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 23px;
+    text-align: center;
+}
+
+.footer-links a:hover {
+    color: black;
+}
+
+.footer-name {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding: 5px;
+}
+
+.footer-name h2 {
+    font-size: 27px;
+}
+
+.footer-last {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-last-link {
+    text-decoration: underline;
+    color: black;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.footer-last-link:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .textPad {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: block;
+        text-align: center;
+    }
+}
+
+.textPad {
+    cursor: pointer;
+}

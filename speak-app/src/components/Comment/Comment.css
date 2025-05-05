@@ -1,0 +1,79 @@
+.comment-container {
+    display: flex;
+    align-items: flex-start;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 16px;
+    margin: 16px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    gap: 16px;
+    flex-direction: row;
+    width: 80%;
+    margin-left: 10%;
+  }
+  
+  .comment-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+    flex-shrink: 0;
+  }
+  
+  .user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+  }
+  
+  .username {
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .comment-right {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 12px 16px;
+    color: #444;
+    font-size: 15px;
+    line-height: 1.5;
+    border-left: 4px solid #0077cc;
+    word-wrap: break-word;
+  }
+  
+  /* Responsive Tasarım */
+  @media (max-width: 600px) {
+    .comment-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 12px;
+    }
+  
+    .comment-left {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 12px;
+      gap: 12px;
+    }
+  
+    .username {
+      margin-top: 0;
+      font-size: 16px;
+    }
+  
+    .comment-right {
+      border-left: none;
+      border-top: 3px solid #0077cc;
+      width: 100%;
+    }
+  }
+  

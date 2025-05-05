@@ -1,0 +1,110 @@
+.logon-form {
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 5px;
+    width: 30%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    margin-left: 35%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.greenbutton {
+    background-color: #05a96d;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.redbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: rgb(229, 30, 30);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.greenbutton:hover,
+.redbtn:hover {
+    opacity: 0.8;
+    text-decoration: none;
+    color: white;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.logon-container {
+    padding: 16px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.labels {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.inputs {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    height: 45px;
+    padding: 10px;
+}
+
+.form-checkbox {
+    margin-right: 5px;
+    accent-color: black;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.form-kvk{
+    color: black;
+}
+
+.form-kvk:hover{
+    color: black;
+}
+
+@media (max-width: 900px) {
+    .logon-form {
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .cancelbtn {
+        width: 100%;
+    }
+
+    .logon-form {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
